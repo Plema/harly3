@@ -1,0 +1,202 @@
+@import "libs/variables";
+@import "libs/button";
+@import "libs/header";
+@import "libs/footer";
+@import "libs/fonts";
+@import "libs/form";
+@import "libs/popups";
+@import "libs/fontello";
+@import 'libs/normalize.scss';
+
+body {
+    position: relative;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-family: 'DIN Pro';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+html {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'DIN Pro';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+}
+
+.main{
+    overflow-x: hidden;
+}
+
+.section{
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul li,
+ol li {
+    margin: 0;
+}
+
+sup {
+    top: -.5em;
+    font-weight: 700;
+    font-size: 64%;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.clearfix {
+    &:after {
+        content: " ";
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        clear: both;
+        height: 0;
+    }
+}
+
+a {
+    cursor: pointer;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+h1 {
+    font-family: 'DIN Pro';
+    font-size: 27px;
+    font-weight: 900;
+    text-transform: uppercase;
+    span{
+        font-family: 'DIN Pro';
+    font-size: 27px;
+    font-weight: 900;
+    text-transform: uppercase;
+    }
+}
+
+h2 {
+    font-family: 'DIN Pro';
+    font-size: 27px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'DIN Pro';
+    font-size: 22px;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: 'DIN Pro';
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 648px;
+        padding: 0;
+    }
+
+    h1{
+        font-size: 46px;
+        span{
+            font-size: 46px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 864px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        width: 1080px;
+    }
+
+    h1{
+        font-size: 54px;
+        span{
+            font-size: 54px;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1160px;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .container {
+        width: 1280px;
+    }
+}

@@ -1,0 +1,113 @@
+.modall {
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 99999;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    display: none;
+    overflow-y: auto;
+    max-height: 100vh;
+    overflow-x: hidden;
+    top: 0;
+
+    .modall-body {
+        max-width: 320px;
+        background-color: #dae5ee;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        margin: 0 auto;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .close {
+        top: 33px;
+        right: 11px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        position: absolute;
+        z-index: 5;
+
+        &::before,
+        &::after {
+            content: "";
+            top: 6px;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            position: absolute;
+            background: $color_grey;
+        }
+
+        &::before {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        &::after {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+    }
+
+    .form {
+        height: 100%;
+        background-color: #fff;
+        width: 100%;
+        padding: 16px 12px;
+        overflow: auto;
+    }
+
+}
+
+.modall.active-modall {
+    display: block;
+}
+
+.showing-modal {
+    overflow: hidden;
+}
+
+@media screen and (max-height: 600px) {
+    .modall {
+        .modall-body {
+            height: 100%;
+            width: 100%;
+            overflow-y: auto;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .modall {
+        .modall-body {
+            max-width: 530px;
+        }
+
+        .close {
+            top: 30px;
+            right: 18px;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 1920px) {}
