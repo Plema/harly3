@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>UNI_Governance</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c">
   <link rel="icon" type="image/svg" sizes="16x16" href="/img/Logo.svg">
   <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/governance.min.css" data-inprogress="">
@@ -13,7 +13,31 @@
 
 <body>
 <!-- Header -->
-<include src="assets/templates/header.html"></include>
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo"><img src="img/logo.png"><span>Unifinance</span></a>
+        <div class="overlay">
+            <nav class="overlayMenu">
+                <ul role="menu">
+                    <li><a href="#">Learn</a></li>
+                    <li class="sub-menu"><a href="#">Governance</a>
+                        <ul class="sub">
+                            <li><a href="#"><i class="icon-paper-plane-1"></i>Telegram</a></li>
+                            <li><a href="#"><i class="icon-comment"></i>Medium</a></li>
+                            <li><a href="#"><i class="icon-twitter-bird"></i>Twitter</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navBurger" role="navigation" id="navToggle"></div>
+        <div class="btn_block">
+            <a href="#" class="unide"><span>Unidex</span></a>
+            <a href="#" class="unilend"><span>Unilend</span></a>
+        </div>
+    </div>
+</header>
   <!-- Основной контент -->
   <div class="wrapper">
     <section class="content">
@@ -68,7 +92,47 @@
   </div>
 
   <!-- Footer -->
-  <include src="assets/templates/footer.html"></include>
+  <footer class="footer">
+    <div class="container">
+        <div class="content_box">
+            <div class="logo_block">
+                <a href="index.html" class="logo"><img src="img/logo.png"><span>Unifinance</span></a>
+                <p>Сontact Us - Unifinance@gmail.com</p>
+            </div>
+            <ul class="menu">
+                <li class="sub-menu">
+                    <a href="#">Learn</a>
+                    <ul class="sub">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Github</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="#">Community</a>
+                    <ul class="sub">
+                        <li><a href="#">Telegram</a></li>
+                        <li><a href="#">Medium</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="#">Governance</a>
+                </li>
+            </ul>
+            <div class="btn_block">
+                <a href="#" class="unide"><span>Unidex</span></a>
+                <a href="#" class="unilend"><span>Unilend</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="content_box">
+                <p>©2020 - Unifinance  |   All right reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
   <!-- Скрипты -->
   <script src="js/jquery-3.4.1.min.js"></script>

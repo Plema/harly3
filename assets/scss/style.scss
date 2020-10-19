@@ -1,5 +1,4 @@
 @import "libs/variables";
-@import "libs/button";
 @import "libs/header";
 @import "libs/footer";
 @import "libs/fonts";
@@ -46,6 +45,7 @@ html {
     font-size: 16px;
     font-weight: 300;
     line-height: 27px;
+    font-family: 'NeoSansCyr-Regular';
 }
 
 *:before,
@@ -123,36 +123,25 @@ a {
 
 }
 
-h1 {
-    font-family: 'DIN Pro';
-    font-size: 27px;
-    font-weight: 900;
-    text-transform: uppercase;
-    span{
-        font-family: 'DIN Pro';
-    font-size: 27px;
-    font-weight: 900;
-    text-transform: uppercase;
-    }
-}
 
-h2 {
-    font-family: 'DIN Pro';
-    font-size: 27px;
-    font-weight: 900;
-    text-transform: uppercase;
+.title{
+    color: #101a37;
+    font-family: 'NeoSansCyr-Regular';
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 56px;
 }
-
-h3 {
-    font-family: 'DIN Pro';
-    font-size: 22px;
-    font-weight: 500;
+p{
+    color: #5b71af;
+    font-family: 'NeoSansCyr-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
 }
-
-h4 {
-    font-family: 'DIN Pro';
-}
-
 
 
 @media (min-width: 768px) {
@@ -161,12 +150,7 @@ h4 {
         padding: 0;
     }
 
-    h1{
-        font-size: 46px;
-        span{
-            font-size: 46px;
-        }
-    }
+
 }
 
 @media (min-width: 1024px) {
@@ -179,24 +163,39 @@ h4 {
     .container {
         width: 1080px;
     }
-
-    h1{
-        font-size: 54px;
-        span{
-            font-size: 54px;
-        }
+    .content_box{
+        width: 90%;
+        margin: 0 auto;
     }
+
 }
 
 @media (min-width: 1400px) {
     .container {
-        width: 1160px;
+        width: 1320px;
+    }
+    .content_box{
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
 
 @media (min-width: 1600px) {
     .container {
-        width: 1280px;
+        width: 1520px;
+    }
+    .content_box{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1920px) {
+    .container {
+        width: 1840px;
+    }
+    .content_box{
+        width: 64%;
+        margin: 0 auto;
     }
 }
