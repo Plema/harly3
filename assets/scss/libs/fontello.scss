@@ -56,8 +56,12 @@
 }
 
 .icon-twitter:before { content: '\54'; } /* 'T' */
+.icon-up-big:before { content: '\2191'; } /* '↑' */
+.icon-down-big:before { content: '\2193'; } /* '↓' */
+.icon-down-small:before { content: '\e009'; } /* '' */
+.icon-up-small:before { content: '\e021'; } /* '' */
 .icon-comment-alt:before { content: '\e71a'; } /* '' */
-.icon-paper-plane-1:before { content: '\e79b'; } /* '' */
+.icon-paper-plane-2:before { content: '\e79b'; } /* '' */
 .icon-paper-plane:before { content: '\f1d8'; } /* '' */
 .icon-twitter-bird:before { content: '\f303'; } /* '' */
 .icon-comment:before { content: '\f4ac'; } /* '' */
